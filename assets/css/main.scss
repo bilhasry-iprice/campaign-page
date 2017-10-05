@@ -4,6 +4,13 @@ $color-blue 	: #086A87;
 $color-green 	: #0DA290;
 $color-grey 	: #EAEAEA;
 
+body{
+	font-family: 'Noto Sans', sans-serif;	
+	margin: 0px;
+	padding: 0 px;
+	-webkit-font-smoothing: antialiased;
+}
+
 @font-face {
 	font-family: 'Circular Std';
 	src: url('./assets/fonts/CircularStd-Bold.eot');
@@ -13,14 +20,6 @@ $color-grey 	: #EAEAEA;
 	font-weight: bold;
 	font-style: normal;
 }
-
-body{
-	font-family: 'Noto Sans', sans-serif;	
-	margin: 0px;
-	padding: 0 px;
-	-webkit-font-smoothing: antialiased;
-}
-
 
 
 *, .border-box, :after, :before {
@@ -382,10 +381,7 @@ p, ul li, li{
 			    padding: 10px 0px;
 			    width: 100%;
 			    border: 1px solid #fff;
-			    background: rgba(9,104,132,0.5);
-			    font-family: 'Circular Std', sans-serif;
-			    font-weight: bold;
-			    text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
+			    background: rgba(255,255,255,0.1);
 			}
 		}
 	}
@@ -425,52 +421,73 @@ p, ul li, li{
 				    line-height: 24px;
 				}
 				form{
-					.email{
-					    width: 100%;
-					    display: block;
-					    color: #fff;
-					    text-align:center;
-					    margin: 0px;
-					    padding: 10px;
-					    border: none;
-					    border-radius: 0px 0px 0px 0px ;
-					    background: none;
-					    border-bottom: 1px solid #fff;
-					    font-size: 16px;
-					    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-						  color: #fff;
-						}
-						&::-moz-placeholder { /* Firefox 19+ */
-						  color: #fff;
-						}
-						&:-ms-input-placeholder { /* IE 10+ */
-						  color: #fff;
-						}
-						&:-moz-placeholder { /* Firefox 18- */
-						  color: #FF6633;
-						}
-
-					}
-					.clear {
-					    text-align:center;
-					    padding-top: 25px;
-					    .button{
-						    background: #086A87;
+					#mc_embed_signup_scroll{
+						position: relative;
+						.email{
+						    width: 100%;
+						    display: block;
 						    color: #fff;
-						    font-family: "Noto Sans", sans-serif;
-						    font-size: 14px;
-						    text-transform: uppercase;
-						    border-radius: 4px;
-						    border: 1px solid #fff;
-						    margin: 0px auto;
-						    padding: 10px 25px;
-						    text-align: center;
-						    font-weight: bold;
+						    text-align:center;
+						    margin: 0px;
+						    padding: 10px;
+						    border: none;
+						    border-radius: 0px 0px 0px 0px ;
+						    background: none;
+						    border-bottom: 1px solid #fff;
+						    font-size: 16px;
+						    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+							  color: #fff;
+							}
+							&::-moz-placeholder { /* Firefox 19+ */
+							  color: #fff;
+							}
+							&:-ms-input-placeholder { /* IE 10+ */
+							  color: #fff;
+							}
+							&:-moz-placeholder { /* Firefox 18- */
+							  color: #FF6633;
+							}
+
 						}
-					}
-					.hidden{
-					    position: absolute;
-					    left: -5000px;
+						label{
+						    position: absolute;
+						    left: 0px;
+						    top: -10px;
+						    font-size: 13px;
+						    opacity: 0;
+						    -webkit-transform: translateX(-20px);
+						    -webkit-transition: all linear 250ms;
+						    -moz-transition: all linear 250ms;
+						    transition: all linear 250ms;
+						}
+						input:focus:not([readonly]) + label{
+						    opacity: 1.0;
+						    -webkit-transform: translateX(0px);
+						    -webkit-transition: all linear 250ms;
+						    -moz-transition: all linear 250ms;
+						    transition: all linear 250ms;
+						}
+						.clear {
+						    text-align:center;
+						    padding-top: 25px;
+						    .button{
+							    background: #086A87;
+							    color: #fff;
+							    font-family: "Noto Sans", sans-serif;
+							    font-size: 14px;
+							    text-transform: uppercase;
+							    border-radius: 4px;
+							    border: 1px solid #fff;
+							    margin: 0px auto;
+							    padding: 10px 25px;
+							    text-align: center;
+							    font-weight: bold;
+							}
+						}
+						.hidden{
+						    position: absolute;
+						    left: -5000px;
+						}
 					}
 				}
 			}
