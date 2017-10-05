@@ -4,12 +4,24 @@ $color-blue 	: #086A87;
 $color-green 	: #0DA290;
 $color-grey 	: #EAEAEA;
 
+@font-face {
+	font-family: 'Circular Std';
+	src: url('./assets/fonts/CircularStd-Bold.eot');
+	src: url('/assets/fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/CircularStd-Bold.woff') format('woff'),
+		url('/assets/fonts/CircularStd-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 body{
 	font-family: 'Noto Sans', sans-serif;	
 	margin: 0px;
 	padding: 0 px;
 	-webkit-font-smoothing: antialiased;
 }
+
+
 
 *, .border-box, :after, :before {
     -o-box-sizing: border-box;
